@@ -10,7 +10,7 @@ format = "{base}.dev{distance}"  # Format version as {base}.dev{distance}
 
 [tool.poetry]
 name = "magnascale-automation"
-version = "0.1.0.dev3"
+version = "0.1.0"
 description = ""
 authors = ["Xu Jay <jay.xu@lenovonetapp.com>"]
 readme = "README.md"
