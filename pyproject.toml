@@ -25,8 +25,6 @@ dallas = "magnascale_automation.command.dallas.main:cli"
 
 [tool.poetry-dynamic-versioning]
 enable = true
-style = "pep440"  # 使用 PEP 440 风格的版本号
-tag-pattern = "v*"  # 匹配以 "v" 开头的标签，如 v0.0.1
-dirty = true  # 如果工作区有未提交更改，则添加 ".dirty" 后缀
-prefix = "dev"  # 可选，为开发版本添加前缀，如 0.0.1-dev.1
-format = "{base_version}.dev{distance}"  # 格式化版本号
+style = "pep440"  # Use PEP 440 style versioning
+dirty = true  # Add ".dirty" suffix if there are uncommitted changes
+format = "{base}.dev{distance}"  # Format version as {base}.dev{distance}
