@@ -3,14 +3,14 @@ requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
 build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.poetry-dynamic-versioning]
-enable = false
+enable = true
 style = "pep440"  # Use PEP 440 style versioning
 dirty = true  # Add ".dirty" suffix if there are uncommitted changes
 format = "{base}.dev{distance}"  # Format version as {base}.dev{distance}
 
 [tool.poetry]
 name = "magnascale-automation"
-version = "0.0.0"
+version = "0.1.0.dev3"
 description = ""
 authors = ["Xu Jay <jay.xu@lenovonetapp.com>"]
 readme = "README.md"
