@@ -2,15 +2,9 @@
 requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
 build-backend = "poetry_dynamic_versioning.backend"
 
-[tool.poetry-dynamic-versioning]
-enable = true
-vcs = "git"
-style = "semver"
-
-
 [tool.poetry]
 name = "magnascale-automation"
-version = "0.0.1"
+version = "0.0.0"
 description = ""
 authors = ["Xu Jay <jay.xu@lenovonetapp.com>"]
 readme = "README.md"
@@ -28,3 +22,11 @@ flake8 = "^7.1.1"
 
 [tool.poetry.scripts]
 dallas = "magnascale_automation.command.dallas.main:cli"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+style = "pep440"  # 使用 PEP 440 风格的版本号
+tag-pattern = "v*"  # 匹配以 "v" 开头的标签，如 v0.0.1
+dirty = true  # 如果工作区有未提交更改，则添加 ".dirty" 后缀
+prefix = "dev"  # 可选，为开发版本添加前缀，如 0.0.1-dev.1
+format = "{base_version}.dev{distance}"  # 格式化版本号
