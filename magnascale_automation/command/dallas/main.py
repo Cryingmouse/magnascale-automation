@@ -1,7 +1,7 @@
 import click
 
 from magnascale_automation.command import CONTEXT_SETTINGS
-from magnascale_automation.command.interactive.menu import build_menu
+from magnascale_automation.command.dallas.interactive.menu import build_menu
 from magnascale_automation.command.dallas.web_service import web_service
 
 

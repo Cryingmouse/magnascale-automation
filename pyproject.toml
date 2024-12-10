@@ -14,6 +14,7 @@ version = "0.1.0"
 description = ""
 authors = ["Xu Jay <jay.xu@lenovonetapp.com>"]
 readme = "README.md"
+license = "Apache-2.0"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -29,6 +30,7 @@ flake8 = "^7.1.1"
 [tool.poetry.scripts]
 test = "pytest:main"
 dallas = "magnascale_automation.command.dallas.main:cli"
+lisa = "magnascale_automation.command.lisa.main:cli"
 
 
 

@@ -2,12 +2,12 @@ import subprocess
 
 from rich.console import Console
 
-from magnascale_automation.command.interactive.action.cluster import cluster_power_off
-from magnascale_automation.command.interactive.action.cluster import enter_maintenance_mode
-from magnascale_automation.command.interactive.action.cluster import exit_maintenance_mode
-from magnascale_automation.command.interactive.action.cluster import refresh_cluster
-from magnascale_automation.command.interactive.action.node import node_discover
-from magnascale_automation.command.interactive.action.node import node_power_off
+from magnascale_automation.command.dallas.interactive.action.cluster import cluster_power_off
+from magnascale_automation.command.dallas.interactive.action.cluster import enter_maintenance_mode
+from magnascale_automation.command.dallas.interactive.action.cluster import exit_maintenance_mode
+from magnascale_automation.command.dallas.interactive.action.cluster import refresh_cluster
+from magnascale_automation.command.dallas.interactive.action.node import node_discover
+from magnascale_automation.command.dallas.interactive.action.node import node_power_off
 
 
 class Menu:
