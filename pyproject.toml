@@ -1,0 +1,25 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "magnascale-automation"
+version = "0.0.1"
+description = ""
+authors = ["Xu Jay <jay.xu@lenovonetapp.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "8.1.7"
+rich = "13.9.4"
+
+[tool.poetry.dev-dependencies]
+ddt = "^1.7.2"
+pytest = "^8.3.4"
+black = "^24.10.0"
+flake8 = "^7.1.1"
+
+[tool.poetry.scripts]
+dallas = "magnascale_automation.command.dallas.main:cli"
