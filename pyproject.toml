@@ -17,20 +17,20 @@ readme = "README.md"
 license = "Apache-2.0"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "3.11.9"
 click = "8.1.7"
 rich = "13.9.4"
 
 [tool.poetry.group.dev.dependencies]
-ddt = "^1.7.2"
-pytest = "^8.3.4"
-black = "^24.10.0"
-flake8 = "^7.1.1"
+ddt = "1.7.2"
+pytest = "8.3.4"
+black = "24.10.0"
+flake8 = "7.1.1"
 
 [tool.poetry.scripts]
 test = "pytest:main"
-dallas = "magnascale_automation.command.dallas.main:cli"
-lisa = "magnascale_automation.command.lisa.main:cli"
+dallas = "magnascale_automation.command.dallas.main:main"
+lisa = "magnascale_automation.command.lisa.main:main"
 
 
 

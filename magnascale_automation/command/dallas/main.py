@@ -6,14 +6,14 @@ from magnascale_automation.command.dallas.web_service import web_service
 
 
 @click.group(context_settings=CONTEXT_SETTINGS)
-def cli():
+def main():
     pass
 
 
-cli.add_command(web_service)
+main.add_command(web_service)
 
 
-@cli.command(context_settings=CONTEXT_SETTINGS)
+@main.command(context_settings=CONTEXT_SETTINGS)
 def run():
     """run cli in interactive mode."""
     menu_manager = build_menu()

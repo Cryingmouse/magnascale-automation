@@ -5,8 +5,8 @@ from magnascale_automation.command.lisa.web_service import web_service
 
 
 @click.group(context_settings=CONTEXT_SETTINGS)
-def cli():
+def main():
     pass
 
 
-cli.add_command(web_service)
+main.add_command(web_service)
